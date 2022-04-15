@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Negroni🍊</title>
+    <style>
+      body {
+        background: linear-gradient(
+          135deg,
+          rgb(255, 168, 168) 10%,
+          rgb(252, 255, 0) 100%
+        );
+      }
+
+      h1 {
+        text-align: center;
+
+        color: #000000;
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid #ffa600;
+        background-color: black;
+        color: rgb(253, 194, 0);
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 45px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.7;
+        font-size: 13px;
+        font-family: monospace;
+        margin: 20px 0 10px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 40px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        background-color: coral;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 605px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+
+      .learn-more {
+        color: #000000;
+        text-decoration: none;
+        font-size: 12px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>The art of Negroni🍊</h1>
+      <h2>Barrel Aged 🌳</h2>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Negroni_served_in_Vancouver_BC.jpg"
+        alt="Negroni"
+      />
+      <p>
+        A Negroni is an Italian cocktail, made of one part gin, one part
+        vermouth rosso (red, semi-sweet), and one part Campari, garnished with
+        orange peel. It is considered an aperitivo. A traditionally made Negroni
+        is stirred, not shaken, and built over ice in an old-fashioned or rocks
+        glass and garnished with a slice of orange. Outside of Italy, an orange
+        peel is often used in place of an orange slice. Nowdays is a very
+        popular technik to make negroni is to use barrel and age the cocktail.
+        The process is simple and all what you need is an oak barrel and some
+        good recepies.🥃🧊🍊
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Negroni"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia
+      </a>
+
+      <button class="buy-button">🧊 Buy Negroni 🍊</button>
+
+      <p class="footer">
+        This page was built by
+        <a href="https://www.instagram.com/admbalogh/" target="_blank">
+          Adam Balogh
+        </a>
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let emoji = prompt("What is your favorite emoji?");
+        let h2 = document.querySelector("h2");
+
+        h2.innerHTML =
+          "🌅<br/>Thank you, " +
+          name +
+          "! We'll be in touch by email, meanwhile have lot of Negroni " +
+          emoji;
+      }
+
+      let buyButton = document.querySelector("buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
